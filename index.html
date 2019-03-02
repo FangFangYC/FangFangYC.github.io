@@ -2,6 +2,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">`
+
 <style>
 body{background-color:darksalmon}
 
@@ -35,12 +37,92 @@ h2{
 
 </style>
 </head>
-  
+
     <body>
       
-    <h1>Fang Yi CHEN</h1>
+        <h1 class="animated flash infinite">Fang Yi CHEN</h1>
 
     <div id="space"></div>
+    <style>
+        .headshot {
+            background-color: aqua;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .profile1,
+        .profile2 {
+            background-color: blueviolet;
+            margin: 2px;
+        }
+        
+        @media (min-width: 300px) {
+            #begin {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: /* prettier-ignore */
+                "hs p1"
+                /* prettier-ignore */
+                "hs p2";
+            }
+            .headshot {
+                grid-area: hs;
+            }
+            .profile1 {
+                grid-area: p1;
+            }
+            .profile2 {
+                grid-area: p2;
+            }
+        }
+    </style>
+
+    <div id="begin">
+        <div class="headshot">headshot</div>
+        
+        <div class="profile1">profile 1</div>
+        <div id="space"></div>
+        <div class="profile2">profile 2</div>
+    </div>
+<style>
+#space{margin:1em;
+}
+.photo {
+            min-width: 150px;
+            min-height: 200px;
+            background-color: antiquewhite;
+            border: lightblue 1px solid;
+            margin: 5px;
+        }
+
+        @media (min-width:400px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (min-width:700px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+</style>
+    <h2>Photos:</h2>
+    <div class="container">
+    <div class="photo">photo</div>
+    <div class="photo">photo</div>
+    <div class="photo">photo</div>
+    <div class="photo">photo</div>
+    <div class="photo">photo</div>
+    <div class="photo"><img width="350" height="200" src="https://media.newyorker.com/photos/5c79552fbc71d10ca5302120/4:3/w_900,c_limit/Davidson-Weisselberg.jpg"></div>
+    </div>
 
 
     <h2>About Me:</h2>
