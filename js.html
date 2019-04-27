@@ -1,0 +1,65 @@
+<h1>How Tall Will I Be?</h1>
+<p>Here is a calculator to help predicting how tall will you be when you grow up!</p>
+
+<p>How tall is your mom? (cm)</p>
+<input id="num1" type="number" value="0"> 
+
+<p>How tall is your dad? (cm)</p>
+<input id="num2" type="number" value="0">
+
+<div id="space"></div>
+<br>
+<button id="cal">Calculate</button>
+</br>
+
+<br> Result 1:
+<input id="result" type="number"value="">
+</br>
+<div id="space"></div>
+
+<p>Your gender</p>
+<div class="ui large dropdown selection" tabindex="0">
+    <select>
+        <option value="0">Boy</option>
+        <option value="1">Girl</option>
+    </select>
+          <i class="dropdown icon"></i>
+          <div id="space"></div>
+          
+          <br>Put Result 1 here
+          <input id="result" type="number" value="">   
+</br>
+          <div id="space"></div>
+          <br>
+          
+          <button id="cal">Get Your Height</button>
+          </br>
+          
+          <br> 
+          <input id="result" type="number">
+          </br>
+          
+
+<script>
+    // a = document.getElementById("num1").value
+    // b = document.getElementById("num2").value
+    // result = (+a) + (+b)
+
+    function calculate() {
+        a = +document.getElementById("num1").value
+        b = +document.getElementById("num2").value
+        result = (a) + (b)
+        document.getElementById("result").value = result
+    }
+
+        document.getElementById("cal").addEventListener('click', calculate)
+     
+    function Get Your Height() {
+
+       
+
+
+    // result = Math.pow(a, b)
+    // console.log('result:')
+    // console.log(result)
+</script>
